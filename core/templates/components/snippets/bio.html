@@ -1,0 +1,18 @@
+<div class="bg-base-300 flex flex-row items-center content-center justify-between rounded-sm p-3 mx-auto my-4 w-100 border-1 border-accent">
+            <img src="{{profile.avatar_url}}" alt="This is my Avatar!" class="rounded-full size-26 border-4 border-accent"/>
+            <div class="flex flex-col">
+                <p class="text-center text-lg">
+                    <span class="text-3xl text-accent">@</span><a href="{{profile.profile_url}}" target="_blank" class="hover:underline decoration-accent">{{profile.nickname}}</a>
+                </p>
+                <p class="text-center text-sm">
+                    <span class="text-current/75">{{profile.name}}</span><br>
+                    <span class="text-current/50">{{profile.bio}}</span>
+                </p>
+                <div class="flex flex-row items-center content-center justify-center">
+                    <span title="Repositories" class="text-current/40 mx-1"><i class="ri-git-repository-line text-accent"></i>{{profile.public_repos}}</span>
+                    <span title="Followers" class="text-current/40 mx-1"><i class="ri-user-follow-fill text-accent"></i>{{profile.followers}}</span>
+                    <span title="Following" class="text-current/40 mx-1"><i class="ri-user-follow-line text-accent"></i>{{profile.following}}</span>
+                </div>
+            </div>
+            
+</div>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        {%load static%}
+        <link rel="stylesheet" href="{%static 'css/src/output.css'%}">
+        <link rel="stylesheet" href="{%static 'css/src/components.css'%}">
+        <link rel="stylesheet" href="{%static 'css/src/animations.css'%}">
+        <link rel="stylesheet" href="{%static 'css/src/misc.css'%}">
+        <link rel="stylesheet" href="{%static 'css/icons/remixicon.css'%}">
+        <link rel="icon" type="image/png" href="{%static 'favicon/favicon-32x32.png'%}">
+        <link rel="apple-touch-icon" href="{%static 'favicon/apple-touch-icon.png'%}">
+
+        {% comment %} <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> {% endcomment %}
+          
+        <title>{%block title%}My (Brand New!) Humble Portfolio{%endblock%}</title>
+    </head>
+    <body class="min-h-screen min-w-screen bg-base-300 overflow-x-hidden overflow-y-hidden">
+        <window class="fixed inset-0 w-[85vw] h-[90vh] border-0.5 border-solid rounded-md m-auto bg-base-100 shadow-sm flex flex-col">
+            {%include 'components/navbar.html'%}
+            <div class="flex flex-row h-full">
+                {%include 'components/sidebar.html'%}
+                {%include 'components/home.html'%}
+                {%include 'components/skills.html'%}
+                {%include 'components/projects.html'%}
+                {%include 'components/github.html'%}
+                {%include 'components/contact.html'%}
+                {%include 'components/about.html'%}
+                {%include 'components/themes.html'%}
+            </div>
+            {%include 'components/footer.html'%}
+        </window>
+        {% comment %} {%block content%}
+        {%endblock%} {% endcomment %}
+        {%block scripts%}
+        <script src="{%static 'js/src/spa.js'%}" defer>
+        </script>
+        {%endblock%}
+    </body>
+</html>

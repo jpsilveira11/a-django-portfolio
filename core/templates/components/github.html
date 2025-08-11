@@ -1,0 +1,25 @@
+<github id="github" class="flex flex-col m-auto w-19/20 h-full font-mono overflow-auto">
+    <div class="items-center content-center justify-center text-center h-1 mt-15">
+        <div class="w-1/2 m-auto">
+            <h1 class="text-3xl text-accent">
+                My Github
+            </h1>
+            <p>
+                Take a look at my Github profile and it repositories. You can also visit the real one, give me your follow and leave a star at the repos you like!
+            </p>
+        </div>
+        {%include 'components/snippets/bio.html'%}
+        <div class="mx-auto my-5 w-19/20 bg-base-200 rounded-md border-1 border-accent/10">
+            <div class="scroll-mask overflow-x-auto m-2 p-4">
+                <div class="grid grid-rows-3 grid-flow-col">
+                {%include 'components/snippets/repos.html'%}
+                &nbsp;
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col bg-base-300 rounded-md items-center content-center mx-auto w-9/10 overflow-x-auto border-1 border-accent">
+        {%include 'components/snippets/contributions.html'%}
+    </div>
+    &nbsp;
+    </div>
+</github>

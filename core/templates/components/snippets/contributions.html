@@ -1,0 +1,32 @@
+<p class="my-2">
+    {{ contributions.total }} contributions in the last year
+</p>
+<div class="contributions-chart flex flex-row gap-1">
+  {% for week in contributions.weeks %}
+    <div class="flex flex-col gap-1 flex-shrink-0">
+      {% for day in week.contributionDays %}
+        {% if day.contributionCount == 0 %}
+          <div title="No contributions on {{ day.date|date:'D, M j, Y' }}"
+               class="w-3 h-3 rounded bg-base-100"></div>
+        {% elif day.contributionCount == 1 %}
+          <div title="{{ day.contributionCount }} contribution at {{day.date|date:'D, M j, Y'}}"
+          class="w-3 h-3 rounded" style="background-color:{{ day.color }};">
+          </div>
+        {%else%}
+          <div title="{{ day.contributionCount }} contributions at {{day.date|date:'D, M j, Y'}}"
+          class="w-3 h-3 rounded" style="background-color:{{ day.color }};">
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
+<div class="flex flex-row items-center text-xs text-current/60 my-2">
+    <span>Less</span>
+    <span class="inline-block w-3 h-3 rounded mx-1 bg-base-100"></span>
+    <span class="inline-block w-3 h-3 mx-1 rounded bg-[#9be9a8]"></span>
+    <span class="inline-block w-3 h-3 mx-1 rounded bg-[#40c463]"></span>
+    <span class="inline-block w-3 h-3 mx-1 rounded bg-[#239a3b]"></span>
+    <span class="inline-block w-3 h-3 mx-1 rounded bg-[#196127]"></span>
+    <span class="ml-2">More</span>
+</div>

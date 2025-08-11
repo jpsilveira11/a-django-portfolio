@@ -1,0 +1,18 @@
+{%for skill in skills%}
+            <div class="flex flex-col justify-between bg-base-300 rounded-sm p-1 m-3 w-72 h-40 border-1 border-accent opacity-50 transition-all duration-300 ease-in-out hover:opacity-100 hover:shadow-lg">
+                <div class="flex flex-row items-center content-center">
+                    <img src="{{skill.icon.url}}" class="w-6 h-6 m-3"/>
+                    <p class="text-lg text-accent font-bold underline underline-offset-6 decoration-3 text-left">
+                        {{skill.name}}
+                    </p>
+                </div>
+                <div>
+                    <p class="text-xs text-current/75 text-left mx-3">
+                        {{skill.description}}
+                    </p>
+                </div>
+                <div>
+                    <a href="{{skill.about}}" target="_blank" class="hover:underline decoration-accent">know more</a>
+                </div>
+            </div> 
+{%endfor%}

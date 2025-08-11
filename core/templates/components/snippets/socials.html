@@ -1,0 +1,16 @@
+<div class="bg-base-300 rounded-sm border-t-4 border-t-accent border-1 border-accent/25 p-3 m-3 font-mono text-sm">
+    <ul>
+        <li>
+    &nbsp;<span class="text-current/50">1 &nbsp;  </span><span class="text-accent">socials</span>&#123;</li>
+        {% for contact in contacts %}
+        <li>
+            &nbsp;<span class="text-current/50">{{ forloop.counter|add:"1" }}</span>
+            &nbsp;&nbsp;&nbsp;
+            <i class="{{ contact.icon }}">&nbsp;</i><span class="text-current/80">{{ contact.label }}:</span><a href="{{ contact.url }}" target="_blank" class="text-accent hover:underline">{{ contact.display }}</a>;
+        </li>
+        {% endfor %}
+        <li>
+    &nbsp;<span class="text-current/50">{{ contacts|length|add:"2" }}&nbsp; </span><span class="text-accent"></span>&#125;
+        </li>
+    </ul>
+</div>

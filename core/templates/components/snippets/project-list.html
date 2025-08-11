@@ -1,0 +1,39 @@
+{%for project in projects%}
+    <div class="flex flex-col justify-between bg-base-300 rounded-sm m-3 w-72 h-80 border-1 border-accent">
+        <div class="flex flex-col">
+            <img src="{{project.cover}}"
+            class="rounded-t-md border-b-1 border-current/25"/>
+            <div class="flex flex-row justify-between m-3">
+                <p class="text-lg text-accent font-bold underline underline-offset-6 decoration-3 text-left">
+                    {{project.name}}
+                </p>
+                {%if project.language%}
+                <p class="text-xs bg-accent text-accent-content rounded-sm p-1 text-right items-center content-center">
+                    <i class="ri-hashtag"></i>{{project.language}}
+                </p>
+                {%endif%}
+            </div>
+            <div class="flex flex-col m-3">
+                {%if project.description%}
+                <p class="text-xs text-current/75 text-left">
+                    {{project.description}}
+                </p>
+                {%endif%}                     
+            </div>
+        </div>
+        <div class="flex flex-col m-3">
+            <hr class="text-current/25">
+            <div class="flex flex-row items-center content-center justify-between">
+                <div class="flex flex-row items-center content-center justify-center">
+                    <span title="Stars" class="text-current/40 mx-1"><i class="ri-star-line text-accent"></i>{{project.stargazers_count}}</span>
+                    <span title="Forks" class="text-current/40 mx-1"><i class="ri-git-fork-line text-accent"></i>{{project.forks_count}}</span>
+                    <span title="Watchers" class="text-current/40 mx-1"><i class="ri-eye-line text-accent"></i>{{project.watchers_count}}</span>
+                </div>
+                <div class="flex flex-row items-center content-center justify-center">
+                    <a href="{{project.html_url}}" target="_blank" class="mx-1"><i class="ri-github-line text-accent hover:text-accent/75 duration-200 ease-in-out"></i></a>
+                    <a href="{{project.homepage}}" target="_blank" class="mx-1"><i class="ri-external-link-line text-accent hover:text-accent/75 duration-200 ease-in-out"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+{%endfor%}

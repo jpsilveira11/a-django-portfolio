@@ -1,0 +1,26 @@
+/*------------ || Sidebar || ------------*/
+.sidebar-active{
+    border-left: 1px solid;
+}
+/*------------ || Fake SPA Components || ------------*/
+#home{
+    display:block;
+}
+#skills{
+    display:none;
+}
+#projects{
+    display:none;
+}
+#github{
+    display:none;
+}
+#contact{
+    display:none;
+}
+#about{
+    display:none;
+}
+#themes{
+    display:none;
+}

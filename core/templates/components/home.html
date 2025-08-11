@@ -1,0 +1,29 @@
+{%load static%}
+<home id="home" class="flex flex-col m-auto w-19/20 h-auto font-mono">
+    <div class="flex flex-row justify-center items-center content-center gap-4 m-auto">
+        <div class="profile-picture">
+            <img src="{{ profile.avatar_url }}" alt="This is me" class="w-55 h-55 mask mask-[url('https://raw.githubusercontent.com/jpsilveira11/jpsilveira11/refs/heads/misc/brush-stroke.png')] mask-size-[115%] mask-top"/>
+        </div>
+        <div>
+            <div class="salutation flex flex-row">
+                <h1 class="text-3xl text-start text-accent">
+                    Hey, there!
+                </h1>
+                <img src="{%static 'gifs/src/wave.gif'%}" alt="👋🏾" class="w-8 h-8"/>
+            </div>
+            <h2 class="salutation-2 text-xl">
+                I'm <span class="text-accent">{{ profile.name }}</span>.
+            </h2>
+            <h3 class="salutation-3 text-md text-start text-current/75">
+                {{ profile.bio }}
+            </h3>
+            <div class="my-networks m-2 flex flex-row items-center content-center justify-center">
+                {%for contact in contacts%}
+                <a href="{{ contact.url }}" target="_blank" class="m-2 text-4xl text-current/50 hover:text-accent transition-all duration-400">
+                    <i class="{{ contact.icon }}"></i>
+                </a>
+                {%endfor%}
+            </div>
+        </div>
+    </div>
+</home>

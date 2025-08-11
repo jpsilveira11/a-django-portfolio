@@ -1,0 +1,42 @@
+{%load static%}
+<about id="about" class="flex flex-col m-auto w-19/20 h-full font-mono overflow-auto">
+    <div class="items-center content-center justify-center h-1 mt-15">
+        <h1 class="text-3xl text-center text-accent">
+            {{profile.name}}
+        </h1>
+        <h2 class="text-xl text-center text-current/50 my-2">
+            {{profile.bio}}
+        </h2>
+        <p class="mx-23 flex flex-row items-center">
+            Hey there!
+            <img src="{%static 'gifs/src/wave.gif'%}" class="gif" alt="👋🏾" width="3%" height="3%">
+        </p>
+        <p class="mx-23">
+            I'm a {{profile.bio}} from {{profile.location}}, Brazil and i'm currently looking for my first professional experience. 
+        </p>
+        <h3 class="text-xl text-accent mx-20 my-3">
+            Experience
+        </h3>
+        <p class="mx-23 my-1">
+            Currently looking for my first professional I.T. experience. 
+        </p>
+        <p class="mx-23 my-1">
+            Previously, i was in a internship program from <span class="text-accent">ECOA PUC-RJ</span> in partnership with <span class="text-accent">Petrobras S.A.</span> Working on different multidisciplinary teams of 3-4 interns, we managed to deliver prototypes of the three innovation projects with agile methods and innovative technologies.
+        </p>
+        <h3 class="text-xl text-accent mx-20 my-3">
+            Graduation
+        </h3>
+        <p class="mx-23 my-1">
+            In December 2024, i graduated in the Bachelor Degree course of Computer Science from the <span class="text-accent">Centro Universitario Carioca</span> college, from Rio de Janeiro, Brazil. 
+        </p>
+        <p class="mx-23 my-1">
+            I also took two <span class="text-accent">Cisco</span> courses during the graduation, both as part of the syllabus content of related subjects of the graduation. Cybersecurity Essentials in 2023 and Network Basics in 2024.
+        </p>
+        <h3 class="text-xl text-accent mx-20 my-3">
+            Hobbies
+        </h3>
+        <p class="mx-23 my-1">
+            As a games enthusiast and sports fan, aside from coding and studying, i like to enjoy good and unique single-player experiences, from sandboxes like Starbound, to strategy (and strong flavors of sport) like Football Manager and multi-player experiences as well. Also, as sports fan, i'm a proud supporter of Botafogo F.R. from Rio de Janeiro.
+        </p>
+    </div>
+</about>
