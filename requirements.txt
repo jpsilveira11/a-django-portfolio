@@ -2,4 +2,4 @@ Django==5.2.5
 gql==3.5.3
 PyGithub>=2.6.1
 python-dotenv==1.1.1
-requests-toolbelt==0.7.1
+requests-toolbelt>=0.10.1
