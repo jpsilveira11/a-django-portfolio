@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'core',
     #libs
     #django browser reload -- rm later
-    'django_browser_reload',
+    #'django_browser_reload',
 ]
 
 MIDDLEWARE = [
