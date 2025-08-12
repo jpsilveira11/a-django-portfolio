@@ -2991,6 +2991,12 @@
   .mask-\[url\(\'\/static\/gifs\/src\/wave\.gif\'\)\] {
     mask-image: url('/static/gifs/src/wave.gif');
   }
+  .mask-\[url\(\'\/static\/misc\/src\/brush-stroke\.png\'\)\] {
+    mask-image: url('/static/misc/src/brush-stroke.png');
+  }
+  .mask-\[url\(\'https\:\/\/raw\.githubusercontent\.com\/jpsilveira11\/a_django_portfolio\/refs\/heads\/dev\/static\/misc\/src\/brush-stroke\.png\'\)\] {
+    mask-image: url('https://raw.githubusercontent.com/jpsilveira11/a_django_portfolio/refs/heads/dev/static/misc/src/brush-stroke.png');
+  }
   .mask-\[url\(\'https\:\/\/raw\.githubusercontent\.com\/jpsilveira11\/jpsilveira11\/refs\/heads\/misc\/brush-stroke\.png\'\)\] {
     mask-image: url('https://raw.githubusercontent.com/jpsilveira11/jpsilveira11/refs/heads/misc/brush-stroke.png');
   }
