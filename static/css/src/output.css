@@ -2099,6 +2099,11 @@
     border-end-start-radius: var(--tabcontent-radius-es);
     border-end-end-radius: var(--tabcontent-radius-ee);
   }
+  .drawer-content {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    min-width: calc(0.25rem * 0);
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -2989,6 +2994,9 @@
   .mask-\[url\(\'https\:\/\/jpespechit\.vercel\.app\/static\/misc\/src\/brush-stroke\.png\'\)\] {
     mask-image: url('https://jpespechit.vercel.app/static/misc/src/brush-stroke.png');
   }
+  .mask-\[url\(\'https\:\/\/raw\.githubusercontent\.com\/jpsilveira11\/a_django_portfolio\/refs\/heads\/main\/static\/misc\/src\/brush-stroke\.png\'\)\] {
+    mask-image: url('https://raw.githubusercontent.com/jpsilveira11/a_django_portfolio/refs/heads/main/static/misc/src/brush-stroke.png');
+  }
   .mask-\[url\(\/static\/misc\/src\/brush-stroke\.png\)\] {
     mask-image: url(/static/misc/src/brush-stroke.png);
   }
@@ -3200,6 +3208,10 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
+  }
+  .ease-out {
+    --tw-ease: var(--ease-out);
+    transition-timing-function: var(--ease-out);
   }
   .btn-xs {
     --fontsize: 0.6875rem;
