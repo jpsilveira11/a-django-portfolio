@@ -2991,6 +2991,15 @@
   .mask-\[url\(\'\/static\/misc\/src\/brush-stroke\.png\'\)\] {
     mask-image: url('/static/misc/src/brush-stroke.png');
   }
+  .mask-\[url\(\'\/static\/misc\/src\\brush-stroke\.png\'\)\] {
+    mask-image: url('/static/misc/src\brush-stroke.png');
+  }
+  .mask-\[url\(\'\/static\/misc\\src\\brush-stroke\.png\'\)\] {
+    mask-image: url('/static/misc\src\brush-stroke.png');
+  }
+  .mask-\[url\(\'\/static\\misc\\src\\brush-stroke\.png\'\)\] {
+    mask-image: url('/static\misc\src\brush-stroke.png');
+  }
   .mask-\[url\(\'\/staticfiles\/misc\/src\/brush-stroke\.png\'\)\] {
     mask-image: url('/staticfiles/misc/src/brush-stroke.png');
   }
@@ -3008,6 +3017,9 @@
   }
   .mask-\[url\(\'\\staticfiles\\misc\\src\\brush-stroke\.png\'\)\] {
     mask-image: url('\staticfiles\misc\src\brush-stroke.png');
+  }
+  .mask-\[url\(\'portfolio\\static\\misc\\src\\brush-stroke\.png\'\)\] {
+    mask-image: url('portfolio\static\misc\src\brush-stroke.png');
   }
   .mask-size-\[115\%\] {
     mask-size: 115%;
