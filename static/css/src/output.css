@@ -2997,6 +2997,9 @@
   .mask-\[url\(\'https\:\/\/raw\.githubusercontent\.com\/jpsilveira11\/jpsilveira11\/refs\/heads\/misc\/brush-stroke\.png\'\)\] {
     mask-image: url('https://raw.githubusercontent.com/jpsilveira11/jpsilveira11/refs/heads/misc/brush-stroke.png');
   }
+  .mask-\[url\(\'static\/misc\/src\/brush-stroke\.png\'\)\] {
+    mask-image: url('static/misc/src/brush-stroke.png');
+  }
   .mask-size-\[\%\] {
     mask-size: %;
   }
